@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "728036738456",
+    "firebase_url": "https://busqueda-tesoro-cbe87.firebaseio.com",
+    "project_id": "busqueda-tesoro-cbe87",
+    "storage_bucket": "busqueda-tesoro-cbe87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728036738456:android:9bb569a2fd9e44e9ef17ed",
+        "android_client_info": {
+          "package_name": "com.lenguajes2.busquedatesoro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728036738456-570ualtqh8esvp93bcarim3mfp86f5u7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcs1_HOWLyjOddlOUSMGqDGsS_9whIAcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728036738456-570ualtqh8esvp93bcarim3mfp86f5u7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

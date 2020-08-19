@@ -13,13 +13,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AnswerAdapter extends RecyclerView.Adapter<AnswerViewHolder> {
+
     private List<Answer> data = new ArrayList();
+    private AnswerItemClick answerItemClick;
+
+    public AnswerAdapter(AnswerItemClick answerItemClick){
+        this.answerItemClick = answerItemClick;
+    }
 
     @NonNull
     @Override
     public AnswerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_answer, parent, false);
-        return new AnswerViewHolder(view);
+        return new AnswerViewHolder(view, answerItemClick, this);
     }
 
     @Override
@@ -35,5 +41,15 @@ public class AnswerAdapter extends RecyclerView.Adapter<AnswerViewHolder> {
 
     public void addAnswers(List<Answer> answersList){
         data = answersList;
+       notifyDataSetChanged();
+    }
+
+    public List<Answer> getData(){
+        return data;
+    }
+
+    public void cleanData(){
+        data.clear();
+        notifyDataSetChanged();
     }
 }

@@ -50,4 +50,9 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemViewHolder> {
     public List<MatrixItem> getData(){
         return data;
     }
+
+    public void cleanData(){
+        data.clear();
+        notifyDataSetChanged();
+    }
 }

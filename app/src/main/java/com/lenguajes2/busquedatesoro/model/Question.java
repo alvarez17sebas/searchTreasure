@@ -2,6 +2,7 @@ package com.lenguajes2.busquedatesoro.model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 import java.util.List;
@@ -13,5 +14,7 @@ public class Question {
     public String question;
     public Boolean displayed;
     public String level;
+    @Ignore
+    public List<Answer> answers;
 
 }

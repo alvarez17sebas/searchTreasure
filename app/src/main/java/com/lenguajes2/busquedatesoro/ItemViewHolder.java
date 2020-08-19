@@ -1,5 +1,6 @@
 package com.lenguajes2.busquedatesoro;
 
+import android.graphics.Color;
 import android.view.View;
 import android.widget.Button;
 
@@ -31,6 +32,8 @@ public class ItemViewHolder extends RecyclerView.ViewHolder {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                button.setBackgroundColor(Color.GRAY);
+                button.setEnabled(false);
                 MatrixItem item = itemAdapter.getData().get(getLayoutPosition());
                 itemClick.clickItem(item);
             }
