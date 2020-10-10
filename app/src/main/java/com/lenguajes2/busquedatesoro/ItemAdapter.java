@@ -7,9 +7,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.lenguajes2.busquedatesoro.ItemViewHolder;
-import com.lenguajes2.busquedatesoro.MatrixItemClick;
-import com.lenguajes2.busquedatesoro.R;
 import com.lenguajes2.busquedatesoro.model.MatrixItem;
 
 import java.util.ArrayList;
