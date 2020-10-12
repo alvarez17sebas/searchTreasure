@@ -1393,33 +1393,33 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
 
 
         //-----------------------
-        //--
 
         Question question36 = new Question();
         question36.id = 36;
-        question36.question = "En un desplazamiento cíclico a la izquierda de un bit, el contenido de {100101} se modifica en";
+        question36.question = "Dentro del modelo OSI la función de 'compatibilización de ficheros de distintos formatos', corresponde al nivel";
         question36.level = LevelQuestion.MEDIUM_LEVEL;
         question36.displayed = false;
 
         Answer answer141 = new Answer();
         answer141.id = 141;
         answer141.questionId = 36;
-        answer141.answer = "";
+        answer141.answer = "a) Nivel de red";
 
         Answer answer142 = new Answer();
         answer142.id = 142;
         answer142.questionId = 36;
-        answer142.answer = "";
+        answer142.answer = "b) Nivel de transporte";
 
         Answer answer143 = new Answer();
         answer143.id = 143;
         answer143.questionId = 36;
-        answer143.answer = "";
+        answer143.answer = "c) Nivel de sesión";
 
         Answer answer144 = new Answer();
         answer144.id = 144;
         answer144.questionId = 36;
-        answer144.answer = "";
+        answer144.answer = "d) Nivel de presentación";
+        answer144.isCorrect = true;
 
         questionDao.insertQuestion(question36);
         questionDao.insertAnswer(answer141);
@@ -1428,33 +1428,33 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         questionDao.insertAnswer(answer144);
 
         //-----------------------
-        //--
 
         Question question37 = new Question();
         question37.id = 37;
-        question37.question = "En un desplazamiento cíclico a la izquierda de un bit, el contenido de {100101} se modifica en";
+        question37.question = "En qué nivel OSI actúan los repetidores?";
         question37.level = LevelQuestion.MEDIUM_LEVEL;
         question37.displayed = false;
 
         Answer answer145 = new Answer();
         answer145.id = 145;
         answer145.questionId = 37;
-        answer145.answer = "";
+        answer145.answer = "a) Enlace";
 
         Answer answer146 = new Answer();
         answer146.id = 146;
         answer146.questionId = 36;
-        answer146.answer = "";
+        answer146.answer = "b) Red";
 
         Answer answer147 = new Answer();
         answer147.id = 147;
         answer147.questionId = 37;
-        answer147.answer = "";
+        answer147.answer = "c) Transporte";
 
         Answer answer148 = new Answer();
         answer148.id = 148;
         answer148.questionId = 37;
-        answer148.answer = "";
+        answer148.answer = "d) Físico";
+        answer148.isCorrect = true;
 
         questionDao.insertQuestion(question37);
         questionDao.insertAnswer(answer145);
@@ -1463,33 +1463,33 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         questionDao.insertAnswer(answer148);
 
         //-----------------------
-        //--
 
         Question question38 = new Question();
         question38.id = 38;
-        question38.question = "En un desplazamiento cíclico a la izquierda de un bit, el contenido de {100101} se modifica en";
+        question38.question = "La capa de Red del modelo OSI equivale a la capa siguiente del modelo TCP";
         question38.level = LevelQuestion.MEDIUM_LEVEL;
         question38.displayed = false;
 
         Answer answer149 = new Answer();
         answer149.id = 149;
         answer149.questionId = 38;
-        answer149.answer = "";
+        answer149.answer = "a) Internet";
+        answer149.isCorrect = true;
 
         Answer answer150 = new Answer();
         answer150.id = 150;
         answer150.questionId = 38;
-        answer150.answer = "";
+        answer150.answer = "b) Application";
 
         Answer answer151 = new Answer();
         answer151.id = 151;
         answer151.questionId = 38;
-        answer151.answer = "";
+        answer151.answer = "c) Red";
 
         Answer answer152 = new Answer();
         answer152.id = 152;
         answer152.questionId = 38;
-        answer152.answer = "";
+        answer152.answer = "d) Data Link";
 
         questionDao.insertQuestion(question38);
         questionDao.insertAnswer(answer149);
@@ -1497,6 +1497,427 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         questionDao.insertAnswer(answer151);
         questionDao.insertAnswer(answer152);
 
+        //-----------------------
+
+        Question question39 = new Question();
+        question39.id = 39;
+        question39.question = "La unidad de datos intercambiada en la capa de transporte, según el modelo OSI de ISO, es";
+        question39.level = LevelQuestion.MEDIUM_LEVEL;
+        question39.displayed = false;
+
+        Answer answer153 = new Answer();
+        answer153.id = 153;
+        answer153.questionId = 39;
+        answer153.answer = "a) TPDU.";
+        answer153.isCorrect = true;
+
+        Answer answer154 = new Answer();
+        answer154.id = 154;
+        answer154.questionId = 39;
+        answer154.answer = "b) Paquete";
+
+        Answer answer155 = new Answer();
+        answer155.id = 155;
+        answer155.questionId = 39;
+        answer155.answer = "c) Trama";
+
+        Answer answer156 = new Answer();
+        answer156.id = 156;
+        answer156.questionId = 39;
+        answer156.answer = "d) TCDU";
+
+        questionDao.insertQuestion(question39);
+        questionDao.insertAnswer(answer153);
+        questionDao.insertAnswer(answer154);
+        questionDao.insertAnswer(answer155);
+        questionDao.insertAnswer(answer156);
+
+        //-----------------------
+        //--
+
+        Question question40 = new Question();
+        question40.id = 40;
+        question40.question = "La dirección IP 192.168.42.127";
+        question40.level = LevelQuestion.MEDIUM_LEVEL;
+        question40.displayed = false;
+
+        Answer answer157 = new Answer();
+        answer157.id = 157;
+        answer157.questionId = 40;
+        answer157.answer = "a) Es una dirección de la red Internet";
+
+        Answer answer158 = new Answer();
+        answer158.id = 158;
+        answer158.questionId = 40;
+        answer158.answer = "b) Es una dirección de la red Internet, clase C";
+
+        Answer answer159 = new Answer();
+        answer159.id = 159;
+        answer159.questionId = 40;
+        answer159.answer = "c) Es una dirección de una red IP privada";
+        answer159.isCorrect = true;
+
+        Answer answer160 = new Answer();
+        answer160.id = 160;
+        answer160.questionId = 40;
+        answer160.answer = "d) Es una dirección de la red Internet, clase B";
+
+        questionDao.insertQuestion(question40);
+        questionDao.insertAnswer(answer157);
+        questionDao.insertAnswer(answer158);
+        questionDao.insertAnswer(answer159);
+        questionDao.insertAnswer(answer160);
+
+
+        //-----------------------
+
+        Question question41 = new Question();
+        question41.id = 41;
+        question41.question = "Las unidades de información entre redes contienen una o más cabeceras que se usan para:";
+        question41.level = LevelQuestion.MEDIUM_LEVEL;
+        question41.displayed = false;
+
+        Answer answer161 = new Answer();
+        answer161.id = 161;
+        answer161.questionId = 41;
+        answer161.answer = "a) Transportar datos a la aplicación software receptora";
+
+        Answer answer162 = new Answer();
+        answer162.id = 162;
+        answer162.questionId = 41;
+        answer162.answer = "b) Evitar que los datos transmitidos por una estación interfieran con los de otra";
+
+        Answer answer163 = new Answer();
+        answer163.id = 163;
+        answer163.questionId = 41;
+        answer163.answer = "c) Asegurar un acceso ordenado al medio físico";
+
+        Answer answer164 = new Answer();
+        answer164.id = 164;
+        answer164.questionId = 41;
+        answer164.answer = "d) Pasar información de control a los niveles OSI (o equivalentes) en el sistema de destino";
+        answer164.isCorrect = true;
+
+        questionDao.insertQuestion(question41);
+        questionDao.insertAnswer(answer161);
+        questionDao.insertAnswer(answer162);
+        questionDao.insertAnswer(answer163);
+        questionDao.insertAnswer(answer164);
+
+        //-----------------------
+
+        Question question42 = new Question();
+        question42.id = 42;
+        question42.question = "En el modelo de referencia OSI, una interfaz:";
+        question42.level = LevelQuestion.MEDIUM_LEVEL;
+        question42.displayed = false;
+
+        Answer answer165 = new Answer();
+        answer165.id = 165;
+        answer165.questionId = 42;
+        answer165.answer = "a) Define las primitivas y los servicios que una capa ofrece a todas las que están sobre ella";
+
+        Answer answer166 = new Answer();
+        answer166.id = 166;
+        answer166.questionId = 42;
+        answer166.answer = "b) Define los servicios y las primitivas que una capa ofrece a la inmediatamente superior";
+        answer166.isCorrect = true;
+
+        Answer answer167 = new Answer();
+        answer167.id = 167;
+        answer167.questionId = 42;
+        answer167.answer = "c) Define la funcionalidad final que el sistema ofrece al usuario";
+
+        Answer answer168 = new Answer();
+        answer168.id = 168;
+        answer168.questionId = 42;
+        answer168.answer = "d) Define las reglas y convenios para que dos procesos en diferentes máquinas comuniquen entre sí";
+
+        questionDao.insertQuestion(question42);
+        questionDao.insertAnswer(answer165);
+        questionDao.insertAnswer(answer166);
+        questionDao.insertAnswer(answer167);
+        questionDao.insertAnswer(answer168);
+
+        //-----------------------
+
+        Question question43 = new Question();
+        question43.id = 43;
+        question43.question = "A qué nivel del modelo OSI se realiza el encapsulamiento Frame Relay y HDLC?";
+        question43.level = LevelQuestion.MEDIUM_LEVEL;
+        question43.displayed = false;
+
+        Answer answer169 = new Answer();
+        answer169.id = 169;
+        answer169.questionId = 43;
+        answer169.answer = "a) Red";
+
+        Answer answer170 = new Answer();
+        answer170.id = 170;
+        answer170.questionId = 43;
+        answer170.answer = "b) Sesión";
+
+        Answer answer171 = new Answer();
+        answer171.id = 171;
+        answer171.questionId = 43;
+        answer171.answer = "c) Enlace de datos";
+        answer171.isCorrect = true;
+
+        Answer answer172 = new Answer();
+        answer172.id = 172;
+        answer172.questionId = 43;
+        answer172.answer = "d) Transporte";
+
+        questionDao.insertQuestion(question43);
+        questionDao.insertAnswer(answer169);
+        questionDao.insertAnswer(answer170);
+        questionDao.insertAnswer(answer171);
+        questionDao.insertAnswer(answer172);
+
+        //-----------------------
+
+        Question question44 = new Question();
+        question44.id = 44;
+        question44.question = "El router es un dispositivo que se utiliza en la interconexión de redes y opera según el modelo OSI en el nivel de";
+        question44.level = LevelQuestion.MEDIUM_LEVEL;
+        question44.displayed = false;
+
+        Answer answer173 = new Answer();
+        answer173.id = 173;
+        answer173.questionId = 44;
+        answer173.answer = "a) Transporte";
+
+        Answer answer174 = new Answer();
+        answer174.id = 172;
+        answer174.questionId = 44;
+        answer174.answer = "b) Red";
+        answer174.isCorrect = true;
+
+        Answer answer175 = new Answer();
+        answer175.id = 175;
+        answer175.questionId = 44;
+        answer175.answer = "c) Físico";
+
+        Answer answer176 = new Answer();
+        answer176.id = 176;
+        answer176.questionId = 44;
+        answer176.answer = "d) Enlace";
+
+        questionDao.insertQuestion(question44);
+        questionDao.insertAnswer(answer173);
+        questionDao.insertAnswer(answer174);
+        questionDao.insertAnswer(answer175);
+        questionDao.insertAnswer(answer176);
+
+        //-----------------------
+
+        Question question45 = new Question();
+        question45.id = 45;
+        question45.question = "Cuál de los siguientes dispositivos es el que trabaja como máximo a nivel 3 - Red - del sistema OSI?";
+        question45.level = LevelQuestion.MEDIUM_LEVEL;
+        question45.displayed = false;
+
+        Answer answer177 = new Answer();
+        answer177.id = 177;
+        answer177.questionId = 45;
+        answer177.answer = "a) Repetidores";
+
+        Answer answer178 = new Answer();
+        answer178.id = 178;
+        answer178.questionId = 45;
+        answer178.answer = "c) Enrutadores (routers)";
+
+        Answer answer179 = new Answer();
+        answer179.id = 179;
+        answer179.questionId = 45;
+        answer179.answer = "c) Enrutadores (routers)";
+        answer179.isCorrect = true;
+
+        Answer answer180 = new Answer();
+        answer180.id = 180;
+        answer180.questionId = 45;
+        answer180.answer = "d) Pasarelas (Gateways)";
+
+        questionDao.insertQuestion(question45);
+        questionDao.insertAnswer(answer177);
+        questionDao.insertAnswer(answer178);
+        questionDao.insertAnswer(answer179);
+        questionDao.insertAnswer(answer180);
+
+        //-----------------------
+
+        Question question46 = new Question();
+        question46.id = 46;
+        question46.question = "Dentro del modelo OSI la función de 'proporcionar testigos para que las dos partes de un protocolo no utilicen la misma operación al mismo tiempo', corresponde al nivel";
+        question46.level = LevelQuestion.MEDIUM_LEVEL;
+        question46.displayed = false;
+
+        Answer answer181 = new Answer();
+        answer181.id = 181;
+        answer181.questionId = 46;
+        answer181.answer = "a) Presentación";
+
+        Answer answer182 = new Answer();
+        answer182.id = 182;
+        answer182.questionId = 46;
+        answer182.answer = "b) Sesión";
+        answer182.isCorrect = true;
+
+        Answer answer183 = new Answer();
+        answer183.id = 183;
+        answer183.questionId = 46;
+        answer183.answer = "c) Transporte";
+
+        Answer answer184 = new Answer();
+        answer184.id = 184;
+        answer184.questionId = 46;
+        answer184.answer = "d) Red";
+
+        questionDao.insertQuestion(question46);
+        questionDao.insertAnswer(answer181);
+        questionDao.insertAnswer(answer182);
+        questionDao.insertAnswer(answer183);
+        questionDao.insertAnswer(answer184);
+
+        //-----------------------
+
+        Question question47 = new Question();
+        question47.id = 47;
+        question47.question = "Las direcciones de tipo B en IPv4";
+        question47.level = LevelQuestion.MEDIUM_LEVEL;
+        question47.displayed = false;
+
+        Answer answer185 = new Answer();
+        answer185.id = 185;
+        answer185.questionId = 47;
+        answer185.answer = "a) Comienzan por '110'";
+
+        Answer answer186 = new Answer();
+        answer186.id = 186;
+        answer186.questionId = 47;
+        answer186.answer = "b) incluyen entre ellas a la dirección 193.168.25.73";
+
+        Answer answer187 = new Answer();
+        answer187.id = 187;
+        answer187.questionId = 47;
+        answer187.answer = "c) destina 16 bits para los sistemas";
+        answer187.isCorrect = true;
+
+        Answer answer188 = new Answer();
+        answer188.id = 188;
+        answer188.questionId = 47;
+        answer188.answer = "d) es utilizada para direcciones multicast";
+
+        questionDao.insertQuestion(question47);
+        questionDao.insertAnswer(answer185);
+        questionDao.insertAnswer(answer186);
+        questionDao.insertAnswer(answer187);
+        questionDao.insertAnswer(answer188);
+
+        //-----------------------
+
+        Question question48 = new Question();
+        question48.id = 48;
+        question48.question = "El protocolo de comunicaciones denominado HDLC, es un protocolo orientado a";
+        question48.level = LevelQuestion.MEDIUM_LEVEL;
+        question48.displayed = false;
+
+        Answer answer189 = new Answer();
+        answer189.id = 189;
+        answer189.questionId = 48;
+        answer189.answer = "a) Carácter, de modos: ARM, ABM y SRM";
+
+        Answer answer190 = new Answer();
+        answer190.id = 190;
+        answer190.questionId = 48;
+        answer190.answer = "b) Bit , de modos: ARM, ABM y SRM";
+        answer190.isCorrect = true;
+
+        Answer answer191 = new Answer();
+        answer191.id = 191;
+        answer191.questionId = 48;
+        answer191.answer = "c) Carácter, con cadencia secuencial";
+
+        Answer answer192 = new Answer();
+        answer192.id = 192;
+        answer192.questionId = 48;
+        answer192.answer = "d) Bit, con cadencia secuencial";
+
+        questionDao.insertQuestion(question48);
+        questionDao.insertAnswer(answer189);
+        questionDao.insertAnswer(answer190);
+        questionDao.insertAnswer(answer191);
+        questionDao.insertAnswer(answer192);
+
+        //-----------------------
+
+        Question question49 = new Question();
+        question49.id = 49;
+        question49.question = " A qué nivel de OSI es equivalente el protocolo IP (Internet Protocol)?:";
+        question49.level = LevelQuestion.MEDIUM_LEVEL;
+        question49.displayed = false;
+
+        Answer answer193 = new Answer();
+        answer193.id = 193;
+        answer193.questionId = 49;
+        answer193.answer = "a) Enlace";
+
+        Answer answer194 = new Answer();
+        answer194.id = 194;
+        answer194.questionId = 49;
+        answer194.answer = "b) Red";
+        answer194.isCorrect = true;
+
+        Answer answer195 = new Answer();
+        answer195.id = 195;
+        answer195.questionId = 49;
+        answer195.answer = "c) Transporte";
+
+        Answer answer196 = new Answer();
+        answer196.id = 196;
+        answer196.questionId = 49;
+        answer196.answer = "d) Comunicación";
+
+        questionDao.insertQuestion(question49);
+        questionDao.insertAnswer(answer193);
+        questionDao.insertAnswer(answer194);
+        questionDao.insertAnswer(answer195);
+        questionDao.insertAnswer(answer196);
+
+        //-----------------------
+
+        Question question50 = new Question();
+        question50.id = 50;
+        question50.question = "Cuál de las siguientes asociaciones de protocolos y niveles OSI es correcta?";
+        question50.level = LevelQuestion.MEDIUM_LEVEL;
+        question50.displayed = false;
+
+        Answer answer197 = new Answer();
+        answer197.id = 197;
+        answer197.questionId = 50;
+        answer197.answer = "a) Nivel 7 - MPLS";
+
+        Answer answer198 = new Answer();
+        answer198.id = 198;
+        answer198.questionId = 50;
+        answer198.answer = "b) Nivel 3 - RARP";
+
+        Answer answer199 = new Answer();
+        answer199.id = 183;
+        answer199.questionId = 50;
+        answer199.answer = "c) Nivel 2 - HDLC";
+        answer199.isCorrect = true;
+
+        Answer answer200 = new Answer();
+        answer200.id = 200;
+        answer200.questionId = 50;
+        answer200.answer = "d) Nivel 1 – CSMA/CD";
+
+        questionDao.insertQuestion(question50);
+        questionDao.insertAnswer(answer197);
+        questionDao.insertAnswer(answer198);
+        questionDao.insertAnswer(answer199);
+        questionDao.insertAnswer(answer200);
     }
 
     private int randomID(){
