@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
@@ -65,8 +66,6 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         setupMatrixItemsRecyclerView();
 
         populateLocalDataBase();
-
-        questionWithAnswersList = questionDao.getQuestions();
 
         setupAnswersRecyclerView();
 
@@ -198,6 +197,8 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         questionDao.insertAnswer(answer3);
         questionDao.insertAnswer(answer4);
 
+        questionWithAnswersList = questionDao.getQuestions();
+
         //--------------------------------------
 
         Question question2 = new Question();
@@ -310,7 +311,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         Question question5 = new Question();
         question5.id = 5;
         question5.question = "Como se clasifican las redes Según su topologia?";
-        question5.level = LevelQuestion.MEDIUM_LEVEL;
+        question5.level = LevelQuestion.HARD_LEVEL;
         question5.displayed = false;
 
         Answer answer17 = new Answer();
@@ -451,7 +452,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         Question question9 = new Question();
         question9.id = 9;
         question9.question = "Cuántas capas tiene el modelo TCP/IP?";
-        question9.level = LevelQuestion.MEDIUM_LEVEL;
+        question9.level = LevelQuestion.EASY_LEVEL;
         question9.displayed = false;
 
         Answer answer33 = new Answer();
@@ -556,7 +557,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         Question question12 = new Question();
         question12.id = 12;
         question12.question = "Sobre las redes de computadores podemos decir";
-        question12.level = LevelQuestion.MEDIUM_LEVEL;
+        question12.level = LevelQuestion.HARD_LEVEL;
         question12.displayed = false;
 
         Answer answer45 = new Answer();
@@ -696,7 +697,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         Question question16 = new Question();
         question16.id = 16;
         question16.question = "Aplicando el teorema de Muestreo de Nyquist, ¿a qué frecuencia mínima debemos muestrear una señal para poder reconstruirla en recepción?";
-        question16.level = LevelQuestion.MEDIUM_LEVEL;
+        question16.level = LevelQuestion.EASY_LEVEL;
         question16.displayed = false;
 
         Answer answer61 = new Answer();
@@ -720,7 +721,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         answer64.questionId = 16;
         answer64.answer = "A la mitad del ancho de banda de la señal";
 
-        questionDao.insertQuestion(question12);
+        questionDao.insertQuestion(question16);
         questionDao.insertAnswer(answer61);
         questionDao.insertAnswer(answer62);
         questionDao.insertAnswer(answer63);
@@ -737,7 +738,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         Answer answer65 = new Answer();
         answer65.id = 65;
         answer65.questionId = 17;
-        answer65.answer = "Para unir un Switch con un Router";
+        answer65.answer = "a. Para unir un Switch con un Router";
 
         Answer answer66 = new Answer();
         answer66.id = 66;
@@ -929,7 +930,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         answer88.questionId = 22;
         answer88.answer = "d. PAP no permite al que realiza la llamada, intentar la autenticación sin un desafío o reto (challenge) previo";
 
-        questionDao.insertQuestion(question20);
+        questionDao.insertQuestion(question22);
         questionDao.insertAnswer(answer85);
         questionDao.insertAnswer(answer86);
         questionDao.insertAnswer(answer87);
@@ -975,7 +976,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         Question question24 = new Question();
         question24.id = 24;
         question24.question = "La norma de IEEE que estandariza las redes inalámbricas es:";
-        question24.level = LevelQuestion.MEDIUM_LEVEL;
+        question24.level = LevelQuestion.HARD_LEVEL;
         question24.displayed = false;
 
         Answer answer93 = new Answer();
@@ -1080,7 +1081,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         Question question27 = new Question();
         question27.id = 27;
         question27.question = "Sobre el protocolo Ethernet 802.3 podemos afirmar:";
-        question27.level = LevelQuestion.MEDIUM_LEVEL;
+        question27.level = LevelQuestion.EASY_LEVEL;
         question27.displayed = false;
 
         Answer answer105 = new Answer();
@@ -1442,7 +1443,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
 
         Answer answer146 = new Answer();
         answer146.id = 146;
-        answer146.questionId = 36;
+        answer146.questionId = 37;
         answer146.answer = "b) Red";
 
         Answer answer147 = new Answer();
@@ -1467,7 +1468,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         Question question38 = new Question();
         question38.id = 38;
         question38.question = "La capa de Red del modelo OSI equivale a la capa siguiente del modelo TCP";
-        question38.level = LevelQuestion.MEDIUM_LEVEL;
+        question38.level = LevelQuestion.EASY_LEVEL;
         question38.displayed = false;
 
         Answer answer149 = new Answer();
@@ -1538,7 +1539,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         Question question40 = new Question();
         question40.id = 40;
         question40.question = "La dirección IP 192.168.42.127";
-        question40.level = LevelQuestion.MEDIUM_LEVEL;
+        question40.level = LevelQuestion.HARD_LEVEL;
         question40.displayed = false;
 
         Answer answer157 = new Answer();
@@ -1640,6 +1641,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         questionDao.insertAnswer(answer168);
 
         //-----------------------
+        // Review D option
 
         Question question43 = new Question();
         question43.id = 43;
@@ -1675,6 +1677,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         questionDao.insertAnswer(answer172);
 
         //-----------------------
+        //Review A option
 
         Question question44 = new Question();
         question44.id = 44;
@@ -1725,7 +1728,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         Answer answer178 = new Answer();
         answer178.id = 178;
         answer178.questionId = 45;
-        answer178.answer = "c) Enrutadores (routers)";
+        answer178.answer = "b) Puentes (Bridges)";
 
         Answer answer179 = new Answer();
         answer179.id = 179;
@@ -1885,6 +1888,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
         questionDao.insertAnswer(answer196);
 
         //-----------------------
+        //Review
 
         Question question50 = new Question();
         question50.id = 50;
@@ -1921,7 +1925,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
     }
 
     private int randomID(){
-        int numero = (int) (Math.random() * questionWithAnswersList.size());
+        int numero = 1 + (int) (Math.random() * questionWithAnswersList.size() - 1);
         return numero;
     }
 
@@ -1949,7 +1953,6 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
             tvQuestion.setTextColor(Color.BLUE);
 
             answerAdapter.cleanData();
-            questionWithAnswersList = questionDao.getQuestions();
         } else{
             fillAnswerAdapter();
         }
@@ -2010,6 +2013,10 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
                 tvQuestion.setTextColor(Color.BLACK);
                 btnStartGame.setEnabled(false);
                 startChronometer();
+
+                questionWithAnswersList =  new ArrayList<>();
+                questionWithAnswersList = questionDao.getQuestions();
+                setupMatrixItemsRecyclerView();
             }
         });
     }
