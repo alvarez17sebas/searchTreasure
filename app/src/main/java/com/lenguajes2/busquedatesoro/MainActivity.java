@@ -2006,6 +2006,7 @@ public class MainActivity extends AppCompatActivity implements MatrixItemClick, 
                 itemAdapter.cleanData();
                 fillMatrixItemsAdapter();
                 tvScore.setText("0");
+                score = 0;
                 matrixItemsRecyclerView.setVisibility(View.VISIBLE);
                 btnStartGame.setBackgroundColor(Color.GREEN);
                 btnStartGame.setText("Juego iniciado");
